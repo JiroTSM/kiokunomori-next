@@ -7,6 +7,7 @@ import { Link } from "react-router-dom"; // 画面遷移リンクの追加
 import HomePage from "./pages/HomePage"; //
 import UserDetailPage from "./pages/UserDetailPage" ; //
 import NotFoundPage from "./pages/NotFoundPage";
+import CounterPage from "./pages/CounterPage";
 
 function App() {
   const { user } = useContext(UserContext);
@@ -27,6 +28,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/user/:id" element={<UserDetailPage />} />
         <Route path="*" element={<NotFoundPage />} />
+        <Route path="/counter" element={<CounterPage />} />
       </Routes>
     </div>
   );
