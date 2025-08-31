@@ -18,7 +18,7 @@ function App() {
 
       {/* ナビゲーションリンク */}
       <nav>
-        <Link to="/">フォーム</Link> | <Link to="/about">このアプリについて</Link>
+        <Link to="/form">フォーム</Link> | <Link to="/about">このアプリについて</Link>
       </nav>
 
       {/* ルーティング設定 */}

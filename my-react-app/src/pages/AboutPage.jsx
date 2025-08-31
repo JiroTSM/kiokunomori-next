@@ -1,8 +1,9 @@
 import { useContext } from 'react';
-import { UserContext } from '../contexts/UserProvider';
+import { useUser } from "../contexts/UserProvider";
 
 function AboutPage() {
-  const { name } = useContext(UserContext);
+  const { state } = useUser();
+  const name = state.user.name;
 
   return <p>このページは{name}さんに関する情報です。</p>;
 }

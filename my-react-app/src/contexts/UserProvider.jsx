@@ -21,7 +21,7 @@ function userReducer(state, action) {
 }
 
 // Context作成
-const UserContext = createContext();
+export const UserContext = createContext();
 
 export function UserProvider({ children }) {
   const [state, dispatch] = useReducer(userReducer, initialState);
