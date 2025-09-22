@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+body {
+  filter: invert(1);
+  background-color: black; /* 必要なら補正 */
+}
